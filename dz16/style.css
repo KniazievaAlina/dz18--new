@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+:root {
+    --bg: #1e6140;
+    --white: #ffffff;
+    --accent-color: #84c551;
+    --buttonn-bg: #e84e0f;
+    --second-accent-color: #8d3200;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-weight: 400;
+    background: rgba(236, 235, 235, 0.4);
+}
+
+a {
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.flex-aic {
+    display: flex;
+    align-items: center;
+}
+
+/*=============breadcrumb==============*/
+.breadcrumb {
+    margin-top: 50px;
+    gap: 8px;
+    justify-content: center;
+}
+
+.breadcrumb a {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb a:last-child {
+    font-weight: 700;
+}
+
+.ellipse {
+    width: 6px;
+    height: 6px;
+    background: #84C551;
+    border-radius: 3px;
+}
+
+/*============title=================*/
+.catalog-title {
+    gap: 17px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.catalog-title h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
+}
+
+.catalog-title img {
+    width: 32px;
+    height: 25px;
+}
+
+.catalog-title img:last-child {
+    transform: scaleX(-1);
+}
+
+/*============container==============*/
+.container {
+    margin-top: 17px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    margin-top: 20px;
+}
+
+.card-body {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 20px;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+/*==============Media 0-575=============*/
+@media (max-width: 575px) {
+    .breadcrumb a {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .catalog-title {
+        padding: 0 15px;
+        gap: 9px;
+        margin-top: 21px;
+        position: relative;
+        justify-content: center;
+    }
+
+    .catalog-title h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .catalog-title img {
+        width: 14px;
+        height: 11px;
+    }
+
+    h5 {
+        font-size: 4vw;
+    }
+}
+
+
+

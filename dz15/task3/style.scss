@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin box($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text {
+    @include box (300px, 200px);
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    @include box (300px, 200px);
+    overflow: hidden;
+}
+
+.block:hover>.image img {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+.block1 {
+    @include box (600px, 200px);
+    position: absolute;
+    transition: background 0.3s;
+}
+
+.block1:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
